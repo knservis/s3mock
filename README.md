@@ -1,6 +1,6 @@
 # S3 mock library for Java/Scala
 
-[![Build Status](https://travis-ci.org/shuttie/s3mock.svg?branch=master)](https://travis-ci.org/shuttie/s3mock)
+[![Build Status](https://travis-ci.org/knservis/s3mock.svg?branch=publish-from-fork)](https://travis-ci.org/knservis/s3mock)
 
 s3mock is a web service implementing AWS S3 API, which can be used for local testing of your code using S3
 but without hitting real S3 endpoints.
@@ -24,22 +24,22 @@ Not supported features (these might be implemented later):
 s3mock package is available for Scala 2.11 (on Java 8). To install using SBT, add these
  statements to your `build.sbt`:
 
-    resolvers += Resolver.bintrayRepo("findify", "maven")
-    libraryDependencies += "io.findify" %% "s3mock" % "0.1.2" % "test",
+    resolvers += Resolver.bintrayRepo("knservisbintray", "maven")
+    libraryDependencies += "is.knserv" %% "s3mock" % "1.0.0" % "test"
 
 On maven, update your `pom.xml` in the following way:
 ```xml
     // add this entry to <repositories/>
     <repository>
-      <id>findify</id>
-      <url>https://dl.bintray.com/findify/maven/</url>
+      <id>bintray-knservisbintray-maven</id>
+      <url>http://dl.bintray.com/knservisbintray/maven</url>
     </repository>
 
     // add this entry to <dependencies/>
     <dependency>
-        <groupId>io.findify</groupId>
+        <groupId>is.knserv</groupId>
         <artifactId>s3mock_2.11</artifactId>
-        <version>0.1.2</version>
+        <version>1.0.0</version>
         <type>pom</type>
         <scope>test</scope>
     </dependency>
