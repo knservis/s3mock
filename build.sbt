@@ -2,7 +2,7 @@ name := "s3mock"
 
 version := "1.0.0"
 
-organization := "io.findify"
+organization := "is.knserv"
 
 scalaVersion := "2.11.8"
 
@@ -23,6 +23,6 @@ libraryDependencies ++= Seq(
 
 licenses += ("MIT", url("https://opensource.org/licenses/MIT"))
 
-bintrayOrganization := Some("findify")
+bintrayOrganization := None
 
 parallelExecution in Test := false
